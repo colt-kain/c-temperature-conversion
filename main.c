@@ -13,8 +13,8 @@ int main(int argc, char* argv[])
 		exit(EXIT_FAILURE);
 	}
 	
-	float temperature_celsius = 5 * (temperature_value - 32) / 9;
-	float temperature_fahrenheit = temperature_value * (9 / 5) + 32;
+	float temperature_celsius = 5 * (temperature_value - 32) / 9.0;
+	float temperature_fahrenheit = temperature_value * (9.0 / 5) + 32;
 
 	printf("%.2f degrees Celsius = %.2f degrees Fahrenheit\n",
 			temperature_value, temperature_fahrenheit);
